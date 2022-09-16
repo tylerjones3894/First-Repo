@@ -21,11 +21,26 @@
 		</html>
         <div align="center">
         <p>Meow! Meow! Meow!</p>
-        function draw() {
-            text("Tyler", mouseX, mouseY);
-            ellipse(20, 20, 20);
-            ellipse(40, 400, 40);
-            ellipse(300, 30, 30);
-            ellipse(40, 40, 40);
-            ellipse(200, 200, 20);
-          }
+        let colorlist = ['red', 'orange', 'yellow', 'green', 'indigo', 'violet']
+
+function setup {
+  createCanvas(windowWidth, windowHeight);
+  background('black');
+   fill('white');
+  textFont("sans-serif");
+  textSize(100);
+  textAlign(CENTER);
+  textStyle(BOLD);
+  stroke('lightskyblue');
+  strokeWeight(5);
+
+}
+
+function draw() {
+  text("Tyler", mouseX, mouseY);
+  ellipse(20, 20, 20);
+  ellipse(40, 400, 40);
+  ellipse(300, 30, 30);
+  ellipse(40, 40, 40);
+  ellipse(200, 200, 20);
+}
